@@ -3,6 +3,6 @@ Bash One Liners
 
 ###### Detect Cyrillic In Filenames
 
-```shell
+```bash
 find . | grep -P "[\x80-\xFF]"
 ```
