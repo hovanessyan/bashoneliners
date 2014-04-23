@@ -27,18 +27,24 @@ cat test_meaningfull_usernames.txt | while read each; do LEN=`echo $each | wc -m
 ```bash
 vim -c '%s/ *$//g' -c 'wq' /path/to/file
 ```
+---
 ###### Convert dot separated name in camelCase name "dotToCamelCase.sh"
 ```bash
 line=$1
 python -c "func = lambda s: s[:1].lower() + s[1:] if s else ''; result=''.join(item.title() for item in '$line'.split('.')); print func(result)"
 ```
-**Usage:**
+**Input:**
+print.this.shit
+
+**Expression:**
 ```bash
 ./dotToCamelCase.sh print.this.shit
 ```
 
 **Output:**   
-printThisShit
+printThisShit  
+
+---
 
 ###### Swap every two lines in a file
 
@@ -72,6 +78,8 @@ secondline3
 _Note:_
 If the input has an odd number of lines, the final line will not be output. If output of that line is desired: sed -n '$p;h;n;p;g;p'
 
+---
+
 ###### All letters in all lines in a file to lowercase
 **Input:**  
 > uSerName1  
@@ -93,6 +101,8 @@ user_name3
 user_name4  
 username5  
 > username6  
+
+---
 
 ###### Extracts all lines between two strings
 
@@ -151,6 +161,8 @@ a 1
 a 9
 a 4
 endcase 4.1
+
+---
 
 ###### Sum a column (first) of numbers from a file with AWK
 
