@@ -43,12 +43,12 @@ printThisShit
 ###### Swap every two lines in a file
 
 **Input:**  
-firstline1  
-secondline1  
-firstline2  
-secondline2  
-firstline3  
-secondline3  
+> firstline1  
+> secondline1  
+> firstline2  
+> secondline2  
+> firstline3  
+> secondline3  
 
  
 **Expression:**
@@ -56,18 +56,18 @@ secondline3
 cat lines.txt | sed -n 'h;n;p;g;p'
 ```
 
-The **-n** flag suppresses the automatic printing.
-**h** puts copies of the current line from the pattern space to the hold space
-**n** reads in the next line to the pattern space and **p** prints it; 
-**g** copies the first line from the hold space back to the pattern space, bringing the first line back into the pattern space, and **p** prints it.
+The **-n** flag suppresses the automatic printing.  
+**h** puts copies of the current line from the pattern space to the hold space;  
+**n** reads in the next line to the pattern space and **p** prints it;   
+**g** copies the first line from the hold space back to the pattern space, bringing the first line back into the pattern space, and **p** prints it.  
 
-**Output:**
-secondline1
-firstline1
-secondline2
-firstline2
-secondline3
-firstline3
+**Output:**  
+> secondline1  
+> firstline1  
+> secondline2  
+> firstline2  
+> secondline3  
+> firstline3  
 
 _Note:_
 If the input has an odd number of lines, the final line will not be output. If output of that line is desired: sed -n '$p;h;n;p;g;p'
