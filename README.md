@@ -11,6 +11,6 @@ find . | grep -P "[\x80-\xFF]"
 
 ###### Length of Longest String in a file
 
-```bash
+```sh
 cat strings.txt | wc -L
 ```
