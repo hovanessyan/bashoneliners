@@ -32,23 +32,28 @@ vim -c '%s/ *$//g' -c 'wq' /path/to/file
 line=$1
 python -c "func = lambda s: s[:1].lower() + s[1:] if s else ''; result=''.join(item.title() for item in '$line'.split('.')); print func(result)"
 ```
-**Usage:**./dotToCamelCase.sh print.this.shit
+**Usage:**
+```bash
+./dotToCamelCase.sh print.this.shit
+```
 
-**Output:**printThisShit
+**Output:** 
+printThisShit
 
 ###### Swap every two lines in a file
+
 **Input:**
-firstline1
-
-secondline1
-
-firstline2
-
-secondline2
-
-firstline3
-
-secondline3
+> firstline1
+>
+> secondline1
+>
+> firstline2
+>
+> secondline2
+>
+> firstline3
+>
+> secondline3
 
  
 **Expression:**
