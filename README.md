@@ -44,10 +44,10 @@ printThisShit
 
 **Input:**  
 > firstline1  
-> secondline1  
-> firstline2  
-> secondline2  
-> firstline3  
+secondline1  
+firstline2  
+secondline2  
+firstline3  
 > secondline3  
 
  
@@ -63,10 +63,10 @@ The **-n** flag suppresses the automatic printing.
 
 **Output:**  
 > secondline1  
-> firstline1  
-> secondline2  
-> firstline2  
-> secondline3  
+firstline1  
+secondline2  
+firstline2  
+secondline3  
 > firstline3  
 
 _Note:_
@@ -75,10 +75,10 @@ If the input has an odd number of lines, the final line will not be output. If o
 ###### All letters in all lines in a file to lowercase
 **Input:**  
 > uSerName1  
-> UserName2  
-> user_NamE3  
-> UsEr_NaMe4  
-> username5  
+UserName2  
+user_NamE3  
+UsEr_NaMe4  
+username5  
 > uSERName6  
 
 **Expression:**
@@ -88,54 +88,54 @@ cat usernames.txt | tr '[A-Z]' '[a-z]'
 
 **Output:**  
 > username1  
-> username2  
-> user_name3  
-> user_name4  
-> username5  
+username2  
+user_name3  
+user_name4  
+username5  
 > username6  
 
 ###### Extracts all lines between two strings
 
 **Task:**Extract the lines between case 4.1 and endcase 4.1
 
-**Input:**
-> Case 4
-> case 4.1
-> a 3
-> a 5
-> a 7
-> a 1
-> a 9
-a 4
-endcase 4.1
-//
-.
-.
-. Do things that dont get parsed
-.
-.
-//
-case 4.2
-a 1
-b 3
-a 6
-b7 
-endcase 4.2
-endcase 4
-//
-.
-.
-.
-. More things
-.
-.
-//
-case 5
-.
-.
-.
-.
-endcase 5
+**Input:**  
+> Case 4  
+case 4.1  
+a 3  
+a 5  
+a 7  
+a 1  
+a 9  
+a 4  
+endcase 4.1  
+//  
+.  
+.  
+. Do things that dont get parsed  
+.  
+.  
+//  
+case 4.2  
+a 1  
+b 3  
+a 6  
+b7   
+endcase 4.2  
+endcase 4  
+//  
+.  
+.  
+.  
+. More things  
+.  
+.  
+//  
+case 5  
+.  
+.  
+.  
+.  
+> endcase 5  
 
 **Expression:**
 ```bash
