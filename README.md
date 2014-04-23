@@ -73,39 +73,39 @@ _Note:_
 If the input has an odd number of lines, the final line will not be output. If output of that line is desired: sed -n '$p;h;n;p;g;p'
 
 ###### All letters in all lines in a file to lowercase
-**Input:**
-uSerName1
-UserName2
-user_NamE3
-UsEr_NaMe4
-username5
-uSERName6
+**Input:**  
+> uSerName1  
+> UserName2  
+> user_NamE3  
+> UsEr_NaMe4  
+> username5  
+> uSERName6  
 
 **Expression:**
 ```bash
 cat usernames.txt | tr '[A-Z]' '[a-z]'
 ```
 
-**Output:**
-username1
-username2
-user_name3
-user_name4
-username5
-username6
+**Output:**  
+> username1  
+> username2  
+> user_name3  
+> user_name4  
+> username5  
+> username6  
 
 ###### Extracts all lines between two strings
 
 **Task:**Extract the lines between case 4.1 and endcase 4.1
 
 **Input:**
-Case 4
-case 4.1
-a 3
-a 5
-a 7
-a 1
-a 9
+> Case 4
+> case 4.1
+> a 3
+> a 5
+> a 7
+> a 1
+> a 9
 a 4
 endcase 4.1
 //
