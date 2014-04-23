@@ -106,7 +106,7 @@ username5
 
 ###### Extracts all lines between two strings
 
-**Task:**Extract the lines between case 4.1 and endcase 4.1
+**Task:** Extract the lines between case 4.1 and endcase 4.1
 
 **Input:**  
 > Case 4  
@@ -153,14 +153,14 @@ awk '/^case 4.1/,/^endcase 4.1/' ./input.txt > output.txt
 ```
 
 **Output:**
-case 4.1
-a 3
-a 5
-a 7
-a 1
-a 9
-a 4
-endcase 4.1
+> case 4.1  
+a 3  
+a 5  
+a 7  
+a 1  
+a 9  
+a 4  
+> endcase 4.1  
 
 ---
 
@@ -172,7 +172,7 @@ awk '{ sum += $1 } END { print sum }' /path/to/input/file
 
 ## Files
 
-###### Detect Cyrillic In Filenames
+###### Detect Cyrillic In filenames
 ```bash
 find . | grep -P "[\x80-\xFF]"
 ```
