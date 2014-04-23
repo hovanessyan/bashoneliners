@@ -44,15 +44,10 @@ printThisShit
 
 **Input:**
 > firstline1
->
 > secondline1
->
 > firstline2
->
 > secondline2
->
 > firstline3
->
 > secondline3
 
  
