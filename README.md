@@ -182,6 +182,11 @@ find . | grep -P "[\x80-\xFF]"
 find / -type f -size +100000k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
 ```
 
+###### Analyze the usage of the keyword 'static'
+```bash
+find . -type f -name "*.java" -exec grep -Hn 'static' {} \; | grep -v -E 'LOGGER|import|class|\('
+```
+
 ## Mercurial
 
 ###### Remove all .project and .classpath files from repository tree
