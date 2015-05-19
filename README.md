@@ -208,3 +208,10 @@ hg log -r "removes('**')" --template "{rev}: {file_dels}\n" | grep <filename>
 ```bash
 hg revert -r <revNo - 1> <path_to_deleted_file>
 ```
+
+## Git
+
+###### Pull multiple repositories from common parent folder
+```bash
+find ./ -type d -name .git -execdir git pull \;
+```
