@@ -221,4 +221,5 @@ find ./ -type d -name .git -execdir git pull \;
 uname -r
 dpkg --list | grep linux-image
 sudo apt-get purge linux-image-3.13.0-{24,27,29,30,32,34,35,36,37,39}-generic
+sudo update-grub2
 ```
